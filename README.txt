@@ -28,10 +28,19 @@ Button "debug":         shows the last successfull sequence of oppened
                         cells, is the sequence tester timer blocked and is
                         the generator thread blocked;
 
-In order for the water to be flowing, at least one of cells of the lowes row must be connected to at least one cell of the top
-row. Still, in the code it is checked, if one of the cells in the bottom is connected to a cell "start". Cell "start" is the
-cell from where the water is comming from. When a cell from the top row is oppened, it gets connected to the "start" cell.
+In order for the water to be flowing, at least one of cells of the lowes row
+must be connected to at least one cell of the top row. Still, in the code it
+is checked, if one of the cells in the bottom is connected to a cell "start".
+Cell "start" is the cell from where the water is comming from. When a cell
+from the top row is oppened, it gets connected to the "start" cell.
 
 Gray cell:  closed cell;
 White cell: oppened cell- it is not connected to "start" cell;
 Blue cell:  filled cell- it is connected to "start" cell;
+
+Comments are written in Bulgarian, but for now I will leave like this.
+I don't feel like taking care of it right now...
+In the original solution, the files are named like this:
+MainCode.cs:      Form1.cs (where the algorithms are turned into code)
+InterfaceCode.cs: Designer.cs (the code for the interface)
+Program.cs:       Program.cs (from where the whole thing gets enabled)
